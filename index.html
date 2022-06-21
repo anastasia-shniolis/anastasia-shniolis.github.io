@@ -1,0 +1,480 @@
+<html>
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  
+  <title>Справочник</title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;1,100&display=swap');
+     @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&display=swap');
+     body {
+      font-family: 'Lato', sans-serift, Arial, 'Awesome';
+	padding: 50px; 
+	margin: 50px; 
+	color: #e7e7e7;
+	background: #003748;
+  font-size: 12px;
+  width:980px;
+  margin:0px auto;
+     }
+     h1 { 
+      font-family: 'Lato'; 
+      font-size: 60px; 
+      font-style: normal; 
+      font-variant: normal; 
+      font-weight: 400; 
+      line-height: 20.4px; 
+      color: #dfdfdf; 
+     }
+      hr {
+    border: none; 
+    background-color: #7c7c7c; 
+    color: #7c7c7c; 
+    height: 0.1px; 
+   }
+
+* {
+    box-sizing: border-box;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 93%;
+    background: #f1f1f1;
+    border-radius: 25px;
+    margin: 30px;
+}
+
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+    
+   
+
+   p{
+    font-family: 'Lato'; 
+     color: #aaaaaa;
+      font-size: 16px; 
+      font-style: normal; 
+      font-variant: normal; 
+      font-weight: 200; 
+      line-height: 20.4px; 
+      margin: 20px;} 
+  
+      ul.hr {
+    margin: 10px; 
+    padding: 45px; 
+   }
+   ul.hr li {
+    display: inline-block;
+    margin-right: 5px; 
+    word-wrap: break-word;
+  background-color: #003748;
+  background-clip: border-box;
+  border: 1px solid rgb(224, 224, 224);
+  width: 250px;
+  height: 385px;
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  font-size: 20px; 
+  font-style: normal; 
+  font-variant: normal;
+  font-weight: 100; 
+   }
+
+
+     box {
+  display: inline-block;
+  font-family: 'Lato'; 
+  
+  
+  line-height: 20.4px; 
+  color: rgb(218, 218, 218);
+  
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  transition: 0.2s;
+  align-items: "center";
+  justify-content: center;
+  display: flex;
+  margin:0px auto;
+
+} 
+.gaonutosal {
+  float: left;
+  width: 37%;
+  padding: 0 1em;
+}
+
+.pesontedan {
+  position: relative;
+  margin-bottom: 1px;
+  color: #f3f1f1;
+  overflow: hidden;
+  display: inline-block;
+  width:800px;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  transition: 0.2s;
+  align-items: "center";
+  justify-content: center;
+margin-left: 35px;
+}
+
+.pesontedan input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.pesontedan label {
+  position: relative;
+  display: block;
+  padding: 0 0 0 1em;
+  background: #1c3e5d;
+  line-height: 3;
+  cursor: pointer;
+  text-shadow: 0 1px 0 #333131;
+  font-size: 25px;
+}
+
+.pesontedan-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #0d7b8e;
+  transition: max-height .40s;
+  font-size: 20px;
+  color: #fffdfd;
+  text-shadow: 0 1px 0 #292727;
+}
+
+.pesontedan-content {
+  background: #0f6f80;
+}
+.pesontedan-content p {
+  margin: 1em;
+  font-size: 20px;
+  color: #dfdfdf;
+}
+
+.pesontedan input:checked ~ .pesontedan-content {
+  max-height: 100vh;
+}
+
+
+.pesontedan label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .40s;
+  -o-transition: all .40s;
+  transition: all .40s;
+}
+.pesontedan input[type=checkbox] + label::after {
+  content: "+";
+
+}
+.pesontedan input[type=radio] + label::after {
+  content: "\25BC";
+}
+.pesontedan input[type=checkbox]:checked + label::after {
+  transform: rotate(315deg);
+}
+.pesontedan input[type=radio]:checked + label::after {
+  transform: rotateX(180deg);
+}
+a.button8:hover { background: rgba(255,255,255,.2); }
+a.button8:active { background: white; }
+ 
+   #footer {
+    position: fixed;
+    left: 0; bottom: 0;
+    padding: 50px; 
+    background: #002631; 
+    color: #fff; 
+    width: 100%;
+
+    </style>
+ </head>
+ <body>
+  <h1 align="center">Справочник по Pascal</h1>
+  <hr align="center" width="200">
+  <p align="center">Pascal - это процедурный язык программирования, часто использующийся для обучения структурному программированию.</p><br>
+  <form class="example" action="action_page.php">
+  <input type="text" placeholder="Поиск" name="search">
+  
+</form>
+  <p align="center">Язык программирования — формальная знаковая система, предназначенная для записи компьютерных программ. Язык программирования определяет набор лексических, синтаксических и семантических правил, задающих внешний вид программы и действия, которые выполнит исполнитель (компьютер) под её управлением.</p><br>
+  <ul class="hr">
+    <li align="center">Типы данных<hr width="100">Любая программа, написанная на любом языке программирования, по большому счету предназначена для обработки данных. В качестве данных могут выступать числа, тексты, графика, звук и др.<br><br></li>
+    <li align="center">Условный оператор<hr width="100">В процессе выполнения программы требуется реализовать разный набор команд в зависимости от произошедших до этого событий это достигается с помощью специальных конструкций – условных операторов</li>
+    <li align="center">Выражения<hr width="100">Выражение  -  это конструкция, возвращающая значение некоторого типа. Простыми выражениями являются переменные и константы.<br><br><br><br><br></li>
+  </ul>
+
+  <h1 align="center">Функции и процедуры</h1><br>
+  <div class="navigaonusing">
+    <div class="gaonutosal">
+    <div class="pesontedan">
+    <input id="pesontedan-one" type="checkbox" name="pesontedans">
+    <label for="pesontedan-one">Abs(x)</label>
+    <div class="pesontedan-content">
+    <p>функция возвращает абсолютное значение (модуль) x(integer, real, complex)</p>
+    <p>функция возвращает абсолютное значение (модуль) x(integer, real, complex)</p>
+    </div>
+    </div>
+    <div class="pesontedan">
+    <input id="pesontedan-two" type="checkbox" name="pesontedans">
+    <label for="pesontedan-two">Sqr(x)</label>
+    <div class="pesontedan-content">
+    <p>функция возвращает квадрат x(integer, real, complex)</p>
+    </div>
+    </div>
+    <div class="pesontedan">
+    <input id="pesontedan-three" type="checkbox" name="pesontedans">
+    <label for="pesontedan-three">Sqrt(x)</label>
+    <div class="pesontedan-content">
+    <p>функция возвращает квадратный корень из x(real, complex)</p>
+    </div>
+    </div>
+    <div class="pesontedan">
+      <input id="pesontedan-four" type="checkbox" name="pesontedans">
+      <label for="pesontedan-four">Sin(x)</label>
+      <div class="pesontedan-content">
+      <p>функция возвращает синус x(real, complex)</p>
+      </div>
+      </div>
+      <div class="pesontedan">
+      <input id="pesontedan-five" type="checkbox" name="pesontedans">
+      <label for="pesontedan-five">Cos(x)</label>
+      <div class="pesontedan-content">
+      <p>функция возвращает косинус x(real, complex)</p>
+      </div>
+      </div>
+      <div class="pesontedan">
+        <input id="pesontedan-six" type="checkbox" name="pesontedans">
+        <label for="pesontedan-six">Ln(x)</label>
+        <div class="pesontedan-content">
+        <p>функция возвращает натуральный логарифм x(real, complex)</p>
+        </div>
+        </div>
+        <div class="pesontedan">
+        <input id="pesontedan-seven" type="checkbox" name="pesontedans">
+        <label for="pesontedan-seven">Exp(x)</label>
+        <div class="pesontedan-content">
+        <p>функция возвращает e в степени x (e=2.718281...)(real, complex)</p>
+        </div>
+        </div>
+        <div class="pesontedan">
+          <input id="pesontedan-eight" type="checkbox" name="pesontedans">
+          <label for="pesontedan-eight">Arctan(x)</label>
+          <div class="pesontedan-content">
+          <p>функция возвращает арктангенс x (real, complex)</p>
+          </div>
+          </div>
+          <div class="pesontedan">
+          <input id="pesontedan-nine" type="checkbox" name="pesontedans">
+          <label for="pesontedan-nine">Power(x,y)</label>
+          <div class="pesontedan-content">
+          <p>функция возвращает x в степени y (real)</p>
+          </div>
+          </div>
+        <div class="pesontedan">
+          <input id="pesontedan-ten" type="checkbox" name="pesontedans">
+          <label for="pesontedan-ten">Conj(z)</label>
+          <div class="pesontedan-content">
+          <p>функция возвращает число, комплексно сопряженное к z (complex)</p>
+          </div>
+          </div>
+          <div class="pesontedan">
+          <input id="pesontedan-eleven" type="checkbox" name="pesontedans">
+          <label for="pesontedan-eleven">Carg(z)</label>
+          <div class="pesontedan-content">
+          <p>функция возвращает аргумент комплексного числа z (в диапазоне (-Pi, Pi]) (complex, возвращает тип real)</p>
+          </div>
+          </div>
+          <div class="pesontedan">
+            <input id="pesontedan-twelve" type="checkbox" name="pesontedans">
+            <label for="pesontedan-twelve">Round(x)</label>
+            <div class="pesontedan-content">
+            <p>функция возвращает результат округления x до ближайшего целого (real, возвращает тип integer)</p>
+            </div>
+            </div>
+            <div class="pesontedan">
+            <input id="pesontedan-thirteen" type="checkbox" name="pesontedans">
+            <label for="pesontedan-thirteen">Trunc(x)</label>
+            <div class="pesontedan-content">
+            <p>функция возвращает целую часть х (real, возвращает тип integer)</p>
+            </div>
+            </div>
+            <div class="pesontedan">
+              <input id="pesontedan-fourteen" type="checkbox" name="pesontedans">
+              <label for="pesontedan-fourteen">Int(x)</label>
+              <div class="pesontedan-content">
+              <p>функция возвращает целую часть х (real)</p>
+              </div>
+              </div>
+              <div class="pesontedan">
+              <input id="pesontedan-fifteen" type="checkbox" name="pesontedans">
+              <label for="pesontedan-fifteen">Frac(x)</label>
+              <div class="pesontedan-content">
+              <p>функция возвращает дробную часть х (real)</p>
+              </div>
+              </div>
+            <div class="pesontedan">
+              <input id="pesontedan-sixteen" type="checkbox" name="pesontedans">
+              <label for="pesontedan-sixteen">Ord(x)</label>
+              <div class="pesontedan-content">
+              <p>функция возвращает номер значения порядкового типа (integer)</p>
+              </div>
+              </div>
+              <div class="pesontedan">
+              <input id="pesontedan-seventeen" type="checkbox" name="pesontedans">
+              <label for="pesontedan-seventeen">Chr(x)</label>
+              <div class="pesontedan-content">
+              <p>функция возвращает символ с кодом х (integer, возвращает тип char)</p>
+              </div>
+              </div>
+              <div class="pesontedan">
+                <input id="pesontedan-eighteen" type="checkbox" name="pesontedans">
+                <label for="pesontedan-eighteen">Odd(x)</label>
+                <div class="pesontedan-content">
+                <p>функция возвращает True, если х - нечетное, и False в противном случае (integer, возвращает тип boolean)</p>
+                </div>
+                </div>
+                <div class="pesontedan">
+                  <input id="pesontedan-ninteen" type="checkbox" name="pesontedans">
+                  <label for="pesontedan-ninteen">Pred(x)</label>
+                  <div class="pesontedan-content">
+                  <p>функция возвращает предыдущее значение порядкового типа (порядковый тип)</p>
+                  </div>
+                  </div>
+                  <div class="pesontedan">
+                  <input id="pesontedan-twenty" type="checkbox" name="pesontedans">
+                  <label for="pesontedan-twenty">Succ(x)</label>
+                  <div class="pesontedan-content">
+                  <p>функция возвращает следующее значение порядкового типа (порядковый тип)</p>
+                  </div>
+                  </div>
+                <div class="pesontedan">
+                  <input id="pesontedan-twentyone" type="checkbox" name="pesontedans">
+                  <label for="pesontedan-twentyone">Random(x)</label>
+                  <div class="pesontedan-content">
+                  <p>функция	возвращает случайное целое в диапазоне от 0 до x-1 (integer)</p>
+                  </div>
+                  </div>
+                  <div class="pesontedan">
+                  <input id="pesontedan-twentytwo" type="checkbox" name="pesontedans">
+                  <label for="pesontedan-twentytwo">Random</label>
+                  <div class="pesontedan-content">
+                  <p>функция возвращает случайное вещественное в диапазоне (0..1) (возвращает тип real)</p>
+                  </div>
+                  </div>
+                  <div class="pesontedan">
+            <input id="pesontedan-twentythree" type="checkbox" name="pesontedans">
+            <label for="pesontedan-twentythree">Read(a,b,...)</label>
+            <div class="pesontedan-content">
+            <p>процедура вводит значения с клавиатуры в переменные a, b ... (переменные простого типа или типа string)</p>
+            </div>
+            </div>
+            <div class="pesontedan">
+              <input id="pesontedan-twentyfour" type="checkbox" name="pesontedans">
+              <label for="pesontedan-twentyfour">Write(a,b,...)</label>
+              <div class="pesontedan-content">
+              <p>процедура выводит значения a, b ... в окно вывода
+ (выражения простого типа, типа string или указатели)</p>
+              </div>
+              </div>
+              <div class="pesontedan">
+              <input id="pesontedan-twentyfive" type="checkbox" name="pesontedans">
+              <label for="pesontedan-twentyfive">Readln(a,b,...)</label>
+              <div class="pesontedan-content">
+              <p>процедура вводит значения с клавиатуры в переменные a, b ..., после чего пропускает все оставшиеся символы в текущей строке ввода. Если параметры процедуры не указаны, то осуществляет паузу в выполнении программы до нажатия клавиши Enter
+(переменные простого типа или типа string)</p>
+              </div>
+              </div>
+            <div class="pesontedan">
+              <input id="pesontedan-twentysix" type="checkbox" name="pesontedans">
+              <label for="pesontedan-twentysix">Writeln(a,b,...)</label>
+              <div class="pesontedan-content">
+              <p>процедура выводит значения a, b ... в окно вывода и осуществляет переход на следующую строку. Если параметры процедуры не указаны, то выполняет только переход на следующую строку.
+(выражения простого типа, типа string или указатели	)</p>
+              </div>
+              </div>
+              <div class="pesontedan">
+              <input id="pesontedan-twentyseven" type="checkbox" name="pesontedans">
+              <label for="pesontedan-twentyseven">Inc(x,n)</label>
+              <div class="pesontedan-content">
+              <p>процедура увеличивает x на n
+(x - порядкового типа,
+n - целого типа)</p>
+              </div>
+              </div>
+              <div class="pesontedan">
+                <input id="pesontedan-twentyeight" type="checkbox" name="pesontedans">
+                <label for="pesontedan-twentyeight">Dec(x,n)</label>
+                <div class="pesontedan-content">
+                <p>процедура уменьшает x на n (x - порядкового типа,
+n - целого типа)</p>
+                </div>
+                </div>
+                <div class="pesontedan">
+                  <input id="pesontedan-twentynine" type="checkbox" name="pesontedans">
+                  <label for="pesontedan-twentynine">Include(s,x)</label>
+                  <div class="pesontedan-content">
+                  <p>процедура включает элемент x во множество s (s - множество, x - элемент, тип которого совместим с базовым типом множества)</p>
+                  </div>
+                  </div>
+                  <div class="pesontedan">
+                  <input id="pesontedan-thirty" type="checkbox" name="pesontedans">
+                  <label for="pesontedan-thirty">Exclude(s,x)</label>
+                  <div class="pesontedan-content">
+                  <p>процедура исключает элемент x из множества s (s - множество, x - элемент, тип которого совместим с базовым типом множества)</p>
+                  </div>
+                  </div>
+                  <div class="pesontedan">
+                  <input id="pesontedan-thirtyone" type="checkbox" name="pesontedans">
+                  <label for="pesontedan-thirtyone">Dec(x)</label>
+                  <div class="pesontedan-content">
+                  <p>процедура уменьшает x на 1 (порядкового типа)</p>
+                  </div>
+                  </div>
+                  <div class="pesontedan">
+                  <input id="pesontedan-thirtytwo" type="checkbox" name="pesontedans">
+                  <label for="pesontedan-thirtytwo">Inc(x)</label>
+                  <div class="pesontedan-content">
+                  <p>процедура увеличивает x на n (x - порядкового типа,
+n - целого типа)</p>
+                  </div>
+                  </div>
+                
+
+    </div>      
+
+
+ <div>
+  <div>
+  </div>
+
+<div id="footer">
+   
+  </div>
+</body>
+</html>
